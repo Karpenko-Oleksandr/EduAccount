@@ -56,6 +56,18 @@ function Employees() {
             });
     };
 
+    const handleDelete = (id) => {
+
+        axios.delete(`http://127.0.0.1:8000/api/employees/${id}/`)
+            .then(() => {
+                fetchEmployees();
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
+    };
+
     return (
         <div className="container mt-5">
 
@@ -150,6 +162,7 @@ function Employees() {
                         <th>Зарплата</th>
                         <th>Email</th>
                         <th>Телефон</th>
+                        <th>Дії</th>
                     </tr>
 
                 </thead>
@@ -166,6 +179,17 @@ function Employees() {
                             <td>{employee.salary}</td>
                             <td>{employee.email}</td>
                             <td>{employee.phone}</td>
+
+                            <td>
+
+                                <button
+                                    className="btn btn-danger btn-sm"
+                                    onClick={() => handleDelete(employee.id)}
+                                >
+                                    Видалити
+                                </button>
+
+                            </td>
 
                         </tr>
 
