@@ -4,43 +4,37 @@ function Navbar() {
 
     return (
 
-        <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div className="sidebar">
 
-            <div className="container-fluid">
-
-                <Link className="navbar-brand" to="/">
-                    EduAccount
-                </Link>
-
-                <div>
-
-                    <ul className="navbar-nav d-flex flex-row gap-3">
-
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/">
-                                Dashboard
-                            </Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/employees">
-                                Працівники
-                            </Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/students">
-                                Студенти
-                            </Link>
-                        </li>
-
-                    </ul>
-
-                </div>
-
+            <div className="sidebar-logo">
+                EduAccount
             </div>
 
-        </nav>
+            <nav className="sidebar-menu">
+
+                <Link className="sidebar-link" to="/">
+                    Dashboard
+                </Link>
+
+                <Link className="sidebar-link" to="/employees">
+                    Працівники
+                </Link>
+
+                <Link className="sidebar-link" to="/students">
+                    Студенти
+                </Link>
+
+                <Link className="sidebar-link" to="/payments">
+                    Платежі
+                </Link>
+
+                <Link className="sidebar-link" to="/operations">
+                    Операції
+                </Link>
+
+            </nav>
+
+        </div>
 
     );
 }

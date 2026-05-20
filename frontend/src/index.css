@@ -1,13 +1,154 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #212529;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+}
+
+.sidebar-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 15px 25px;
+}
+
+.sidebar-menu li:hover {
+  background: #343a40;
+  transition: 0.3s;
+}
+
+.sidebar-menu a {
+  color: white;
+  font-size: 18px;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 30px;
+}
+
+.dashboard-card {
+  border: none;
+  border-radius: 15px;
+  padding: 25px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.bg-blue {
+  background: #0d6efd;
+}
+
+.bg-green {
+  background: #198754;
+}
+
+.bg-orange {
+  background: #fd7e14;
+}
+
+.bg-red {
+  background: #dc3545;
+}
+
+.table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.btn-dark {
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+input,
+select {
+  border-radius: 10px !important;
+  padding: 10px !important;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f6f9;
+}
+
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #1b1f27, #111827);
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+.sidebar-logo {
+  color: white;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 400;
+  padding: 14px 18px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.sidebar-link:hover {
+  background-color: #2563eb;
+  color: white;
+  padding-left: 24px;
+}
+
+.container {
+  margin-left: 290px;
 }
